@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+  <h1>Here are a list of files!</h1>
+  <ul class = "file_list">
+    <% files = @files.sort_by { |name| name.downcase }.reverse %>
+    <% files.each do |file_name| %>
+      <li><a href="https://8c2ce42cc6334a8abeca91aa5d216b45.vfs.cloud9.us-east-1.amazonaws.com/<%= file_name %>"><%= file_name %></a></li>
+    <% end %>
+  </ul>
+  <a href= "https://8c2ce42cc6334a8abeca91aa5d216b45.vfs.cloud9.us-east-1.amazonaws.com/reverse">Sort Descending</a>
+  <a href= "https://8c2ce42cc6334a8abeca91aa5d216b45.vfs.cloud9.us-east-1.amazonaws.com/">Sort Ascending</a>
+</html>

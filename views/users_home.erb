@@ -1,0 +1,6 @@
+<h2>HOMEPAGE</h2>
+<ul>
+  <% @content.each do |name, _| %>
+    <li><a href="/<%= name %>"><%= name.capitalize %></a></li>
+  <% end %>
+</ul>

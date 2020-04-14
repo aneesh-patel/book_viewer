@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+  <h1>Users and Interests</h1>
+    <%= yield %>
+  <p>There are <%= @count[:users] %> users with a total of <%= @count[:interests] %> interests.</p>
+  <% @content.each do |name, _| %>
+    <a href="/<%= name %>"><%= name.capitalize %></a>
+  <% end %>
+  <a href="/">Return Home</a>
+</html>

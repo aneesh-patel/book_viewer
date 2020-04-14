@@ -1,0 +1,10 @@
+<h2>Meet <%= @name.capitalize %>!</h2>
+<h3><em>Personal information</em></h3>
+<p><strong>EMAIL:</strong> <%= @email %></p>
+<p><strong>INTERESTS</strong>
+  <div class='interests'>
+    <% @interests.each do |interest| %>
+      <em><%= interest.capitalize %><%= @interests.last == interest ? "" : ", " %></em>
+    <% end %>
+  </div>  
+</p>
